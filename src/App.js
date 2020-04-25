@@ -1,9 +1,12 @@
-import React from 'react';
+import React from 'react'
+import Header from './views/header.js'
+import SortingSection from './views/sorting/sortingSection'
 
 function App() {
   return (
     <div className="App">
-      <h1> HELLO WORLD </h1>
+      <Header> Sorting visualizer </Header>
+      <SortingSection />
     </div>
   );
 }
