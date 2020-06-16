@@ -51,32 +51,19 @@ const TransitionsModal = () => {
             <div style={{textAlign: 'center'}}>
               <h2 > Welcome to my Pathfinding Visualizer</h2>
             </div>
-            <div style={{display: 'flex', justifyContent: 'space-between', marginLeft: '1em', marginRight: '1em'}}>
-              <div style={{display: 'flex', flexDirection: 'row'}}>
-                <p style={{color: '#63C132'}}> Green cell&nbsp; </p>
-                <p> - start node </p>
-              </div>
-              <div style={{display: 'flex', flexDirection: 'row'}}>
-                <p style={{color: '#2d749a'}}> Blue cell&nbsp; </p>
-                <p> - expanded node </p>
-              </div>
+
+            <div style={{display: 'flex', flexDirection: 'row'}}>
+              <p style={{color: '#63C132'}}> Green cell&nbsp; </p>
+              <p> - start node </p>
+            </div>
+            <div style={{display: 'flex', flexDirection: 'row'}}>
+              <p style={{color: '#cf2e2e'}}> Red cell&nbsp; </p>
+              <p> - goal node </p>
             </div>
 
-            <div style={{display: 'flex', justifyContent: 'space-between', marginLeft: '1em', marginRight: '1em'}}>
-              <div style={{display: 'flex', flexDirection: 'row'}}>
-                <p style={{color: '#cf2e2e'}}> Red cell&nbsp; </p>
-                <p> - goal node </p>
-              </div>
-              <div style={{display: 'flex', flexDirection: 'row'}}>
-                <p style={{color: '#ffff60'}}> Yellow cell&nbsp; </p>
-                <p> - shortest path </p>
-              </div>
-            </div>
-            <p> 1. Click inside the grid and hold down your mouse button to draw walls </p>
-            <p> 2. Clicking again will allow you to remove walls </p>
-            <p> 3. Select algorithm of choice </p>
-            <p> 4. Select a different speed if you feel like it </p>
-            <p> 5. Hit play :)  </p>
+            <p> 1. Select algorithm of choice </p>
+            <p> 2. Select a different speed if you feel like it </p>
+            <p> 3. Hit play :)  </p>
             <div style={{textAlign: 'center'}}>
               <Button
                 style={{color: `rgb(${[20,20,20]})`, backgroundColor: `rgb(${[220,220,220]})`, fontSize: '0.9em'}}

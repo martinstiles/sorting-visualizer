@@ -27,7 +27,7 @@ const ButtonGroup = (props) => {
   // ALGORITHM SELECT
   const [algorithm, setAlgorithm] = useState('')
   const handleAlgorithmChange = (event) => {
-    props.setAlgorithm(event.target.value)
+    //props.setAlgorithm(event.target.value)
     setAlgorithm(event.target.value)
     console.log(event.target.value)
   }
@@ -52,7 +52,7 @@ const ButtonGroup = (props) => {
           <div style={{color: 'black', fontStyle: 'italic'}}>Select algorithm</div>
         </InputLabel>
         <Select style={selectStyle} value={algorithm} onChange={handleAlgorithmChange} label="Algorithm" autoWidth={true}>
-          <MenuItem value={'aStar'}>A*</MenuItem>
+          <MenuItem value={'mergeSort'}>Merge sort</MenuItem>
         </Select>
       </FormControl>
 
@@ -80,7 +80,7 @@ const ButtonGroup = (props) => {
         style={{marginLeft: '1em', color: 'black', backgroundColor: isRunning ? 'gray' : '#cf2e2e'}}
         variant="contained"
         disabled={isRunning}
-        onClick={() => {console.log('hei')}}
+        onClick={props.shuffleBars}
       >
         <ShuffleIcon />
       </Button>
