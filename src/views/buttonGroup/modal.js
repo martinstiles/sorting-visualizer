@@ -53,12 +53,16 @@ const TransitionsModal = () => {
             </div>
 
             <div style={{display: 'flex', flexDirection: 'row'}}>
-              <p style={{color: '#63C132'}}> Green cell&nbsp; </p>
-              <p> - start node </p>
+              <p> Grey bars&nbsp; </p>
+              <p> - normal </p>
             </div>
             <div style={{display: 'flex', flexDirection: 'row'}}>
-              <p style={{color: '#cf2e2e'}}> Red cell&nbsp; </p>
-              <p> - goal node </p>
+              <p style={{color: '#2d749a'}}> Blue bars&nbsp; </p>
+              <p> - selected for comparing </p>
+            </div>
+            <div style={{display: 'flex', flexDirection: 'row'}}>
+              <p style={{color: '#63C132'}}> Green bars&nbsp; </p>
+              <p> - finished </p>
             </div>
 
             <p> 1. Select algorithm of choice </p>
